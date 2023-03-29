@@ -1,0 +1,19 @@
+.button-action {
+    width: 50%;
+}
+
+.stt {
+    width: 15%;
+
+}
+
+.nameWord {
+    width: 60%;
+    text-align: center;
+}
+
+.nameWord2 {
+    text-decoration: line-through;
+    width: 60%;
+    text-align: center;
+}

@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import {Col, Container, Row} from "react-bootstrap";
+import NavbarTop from "./components/navbar";
+import TodoList from "./components/todoList";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Container>
+        <Row>
+          <Col><NavbarTop/></Col>
+        </Row>
+        <Row>
+          <Col><TodoList/></Col>
+        </Row>
+      </Container>
   );
 }
 
-export default App;
